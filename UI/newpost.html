@@ -28,17 +28,26 @@
 
   </div>
   <div class="sideint">
-  <form>
-    <p>Post Title: <input type="text"><br/></p>
-    <p><select>
-    <option value="0">post type:</option>
-    <option value="1">intervention</option>
-    <option value="2">red flag</option>
-  </select></p>
-    <p>Description: <textarea name="comment" form="usrform">Enter description here...</textarea><br/></p>
-  <input type="checkbox" name="vehicle1" value="Bike">geolocation?<br/>
-    <button type="submit">submit</button>
-  </form>
+  <div class="container">
+ <form action="">
+   <label for="fname">Post Title</label>
+   <input type="text" id="posttitle" name="posttitle" placeholder="what is your post about?...">
+
+   <label for="country">Post Type</label>
+   <select id="posttype" name="posttype">
+     <option value="intervention">Intervention</option>
+     <option value="redflag">Red Flag</option>
+   </select>
+
+   <input type="checkbox" name="vehicle1" value="Bike">Geolocation?<br/>
+
+
+   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+   <input type="submit" value="Publish">
+ </form>
+ </div>
+
   </div>
 
   </div>

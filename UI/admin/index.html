@@ -10,31 +10,29 @@
 </head>
 <body>
   <div class="navbar">
-  <a href="home.html">Home</a>
-  <a href="interventions.html">Interventions</a>
-  <a href="redflags.html">Redflags</a>
-  <a href="newpost.html">New Post</a>
-  <a href="index.html" class="right">Logout</a>
-  <a href="users.html" class="right">John Doe</a>
+  <a href="admin.html">Home</a>
   </div>
 
   <div class="row">
-
-  <div class="mainint">
-
-    <h1>User Profile</h1>
+  <div class="main">
+    <div class="header">
+    <h1>iReporter Admin Site</h1>
     <p><img src="static/images/ireporter.jpg" height="90" width="100" alt="ireporter logo"/></p>
     <p>Africa's <font id="corrupt" >Corruption</font> Informant</p>
-
+    </div>
   </div>
-  <div class="sideint">
-  <h3><u>iReporter User Activity Summary</u></h3>
-  <p>Total Posts:</p>
-  <p>Rejected:</p>
-  <p>Approved:</p>
-  <p>Under Investigation:</p>
+  <div class="side">
+    <form>
+      <h4>Sign-In</h4>
+       <input type="text" placeholder="Enter Username/Email" name="uname" required>
+       <input type="password" placeholder="Enter Password" name="psw" required><br/>
+       <button type="submit">Login</button>
+       <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <div><span class="psw">Forgot <a href="#">password?</a></span></div>
+    </form>
   </div>
-
   </div>
 
 
