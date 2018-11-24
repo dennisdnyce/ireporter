@@ -5,42 +5,39 @@
   <title>iReporter</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/styler.css">
 </head>
 <body>
-  <div class="navbar">
-  <a href="admin.html">Home</a>
-  <a href="adminint.html">Interventions</a>
-  <a href="adminred.html">Redflags</a>
-  <a href="index.html" class="right">Logout</a>
-  <a href="" class="right">Admin John Doe</a>
-  </div>
 
   <div class="topnav">
+  <a href="admin.html">Home</a>
+  <a href="adminint.html">Interventions</a>
+  <a href="adminred.html">Red Flags</a>
+  <a class="search-container" href="index.html">Logout</a>
+  <a class="search-container" href="">Welcome Admin John Doe</a>
   <div class="search-container">
-    <form action="">
-    <input type="text" placeholder="Search.." name="search" >
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">GO</button>
     </form>
   </div>
   </div>
 
   <div class="row">
+  <div class="left">
 
-  <div class="mainint">
-
-    <h1>Red-Flags</h1>
+    <h1 class="logo" >Published Redflag iReports</h1>
     <p><img src="static/images/ireporter.jpg" height="90" width="100" alt="ireporter logo"/></p>
-    <p>Africa's <font id="corrupt" >Corruption</font> Informant</p>
+    <p>Africa's <font class="corrupt" >Corruption</font> Informant</p>
 
   </div>
-  <div class="sideint">
-    <h3><font style="color:red;">Subject:</font>Crisis at Trans Nzoia</h3>
-    <p style="color:green;">posted on 3rd December 2018 by dnyce</p>
+  <div class="middle">
+
+    <h3><font style="color:red;">Subject:</font>iReport Redflag Title</h3>
+    <p style="color:green;">posted on some date by some user</p>
+    <p><b>tags:</b> <font style="color:red;">Intervention</font><span style="display:inline-block; width:5px;"></span><a href="#">geolocation</a></p>
     <p><img src="static/images/hope.jpeg" height="90" width="100" alt="ireporter logo"/></p>
-    <p><b>tags:</b> <font style="color:red;">Redflag</font></p>
-    <p><a href="#">geolocation</a></p>
-    <p>Some few words about the incident being reported...<a href="">read more</a></p>
+    <p>Some few words about the incident being reported...</p>
     <form>
       <p><select>
       <option value="0">under investigation</option>
@@ -50,22 +47,19 @@
       <button type="submit">approve</button>
     </form>
     <hr>
-    <h3><font style="color:red;">Subject:</font>Crisis at Trans Nzoia</h3>
-    <p style="color:green;">posted on 3rd December 2018 by juma</p>
-    <p><img src="static/images/hope.jpeg" height="90" width="100" alt="ireporter logo"/></p>
-    <p><b>tags:</b> <font style="color:red;">Redflag</font></p>
-    <p><a href="#">geolocation</a></p>
-    <p>Some few words about the incident being reported...<a href="">read more</a></p>
-    <form>
-      <p><select>
-      <option value="0">under investigation</option>
-      <option value="1">resolved</option>
-      <option value="2">rejected</option>
-      </select></p>
-      <button type="submit">approve</button>
-    </form>
-  </div>
 
+  </div>
+  <div class="right">
+
+    <h1>Admin Profile</h1>
+    <p><img src="static/images/user.jpg" height="90" width="100" alt="ireporter logo"/></p>
+    <p>Name:</p>
+    <p>Username:</p>
+    <p>Phone:</p>
+    <p>Email:</p>
+    <a href="#">edit</a>
+
+  </div>
   </div>
 
 

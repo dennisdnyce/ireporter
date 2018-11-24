@@ -5,42 +5,51 @@
   <title>iReporter</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/styler.css">
 </head>
 <body>
-  <div class="navbar">
-  <a href="admin.html">Home</a>
-  <a href="adminint.html">Interventions</a>
-  <a href="adminred.html">Redflags</a>
-  <a href="index.html" class="right">Logout</a>
-  <a href="" class="right">Admin John Doe</a>
-  </div>
 
   <div class="topnav">
+  <a href="admin.html">Home</a>
+  <a href="adminint.html">Interventions</a>
+  <a href="adminred.html">Red Flags</a>
+  <a class="search-container" href="index.html">Logout</a>
+  <a class="search-container" href="">Welcome Admin John Doe</a>
   <div class="search-container">
-    <form action="">
-    <input type="text" placeholder="Search.." name="search" >
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">GO</button>
     </form>
   </div>
   </div>
 
   <div class="row">
+  <div class="left">
 
-  <div class="mainint">
-
-    <h1>Admin Site</h1>
+    <h1 class="logo" >Admin Site</h1>
     <p><img src="static/images/ireporter.jpg" height="90" width="100" alt="ireporter logo"/></p>
-    <p>Africa's <font id="corrupt" >Corruption</font> Informant</p>
+    <p>Africa's <font class="corrupt" >Corruption</font> Informant</p>
 
   </div>
-  <div class="sideint">
-  <h3><u>iReporter Summary</u></h3>
-  <p>Total Posts:</p>
-  <p>Redflags:</p>
-  <p>Interventions:</p>
-  </div>
+  <div class="middle">
 
+    <h3><u>iReporter User Posts Summary</u></h3>
+    <p>Total Posts: <a href="#">View</a></p>
+    <p>Redflags: <a href="#">View</a></p>
+    <p>Interventions: <a href="#">View</a></p>
+
+  </div>
+  <div class="right">
+
+    <h1>Admin Profile </h1>
+    <p><img src="static/images/user.jpg" height="90" width="100" alt="ireporter logo"/></p>
+    <p>Name:</p>
+    <p>Username:</p>
+    <p>Phone:</p>
+    <p>Email:</p>
+    <a href="#">edit</a>
+
+  </div>
   </div>
 
 

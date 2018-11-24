@@ -5,60 +5,50 @@
   <title>iReporter</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/styler.css">
 </head>
 <body>
-  <div class="navbar">
-  <a href="home.html">Home</a>
-  <a href="interventions.html">Interventions</a>
-  <a href="redflags.html">Redflags</a>
-  <a href="newpost.html">New Post</a>
-  <a href="index.html" class="right">Logout</a>
-  <a href="users.html" class="right">John Doe</a>
-  </div>
 
   <div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="interventions.html">Interventions</a>
+  <a href="redflags.html">Red Flags</a>
+  <a href="newpost.html">Post iReport</a>
+  <a class="search-container" href="index.html">Logout</a>
+  <a class="search-container" href="users.html">Welcome John Doe</a>
   <div class="search-container">
-    <form action="">
-    <input type="text" placeholder="Search.." name="search" >
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">GO</button>
     </form>
   </div>
   </div>
 
   <div class="row">
+  <div class="left">
 
-  <div class="mainint">
-
-    <h1>Interventions</h1>
+    <h1 class="logo" >Interventions</h1>
     <p><img src="static/images/ireporter.jpg" height="90" width="100" alt="ireporter logo"/></p>
     <p>Africa's <font id="corrupt" >Corruption</font> Informant</p>
 
   </div>
-  <div class="sideint">
-    <h3><font style="color:red;">Subject:</font>Crisis at Uasin Gishu</h3>
-    <p style="color:green;">posted on 3rd December 2018 by dnyce</p>
-    <p><img src="static/images/hope.jpeg" height="90" width="100" alt="ireporter logo"/></p>
-    <p><b>tags:</b> <font style="color:red;">Intervention</font></p>
-    <p><a href="#">geolocation</a></p>
-    <p>Some few words about the incident being reported...<a href="details.html">read more</a></p>
-    <form>
-      Comment: <input type="text">
-      <button type="submit">submit</button>
-    </form>
-    <hr>
-      <h3><font style="color:red;">Subject:</font>Crisis at Trans Nzoia</h3>
-    <p style="color:green;">posted on 3rd December 2018 by juma</p>
-    <p><img src="static/images/hope.jpeg" height="90" width="100" alt="ireporter logo"/></p>
-    <p><b>tags:</b> <font style="color:red;">Intervention</font></p>
-    <p><a href="#">geolocation</a></p>
-    <p>Some few words about the incident being reported...<a href="details.html">read more</a></p>
-    <form>
-      Comment: <input type="text">
-      <button type="submit">submit</button>
-    </form>
-  </div>
+  <div class="middle">
 
+    <h3><font style="color:red;">Subject:</font>iReport Title</h3>
+    <p><b>tags:</b> <font style="color:red;">intervention</font><span style="display:inline-block; width:5px;"></span><a href="#">get location?</a></p>
+    <p style="color:green;">posted on some date by some user</p>
+    <p><img src="static/images/hope.jpeg" height="90" width="100" alt="ireporter logo"/></p>
+    <p>Some few words about the incident being reported...<a href="details.html">read more</a></p>
+    <hr>
+
+  </div>
+  <div class="right">
+
+    <h1>Top iReports</h1>
+    <p><img src="static/images/ireporter.jpg" height="90" width="100" alt="ireporter logo"/></p>
+    <p>Africa's <font class="corrupt" >Corruption</font> Informant</p>
+
+  </div>
   </div>
 
 

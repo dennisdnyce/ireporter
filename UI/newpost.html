@@ -5,59 +5,63 @@
   <title>iReporter</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/styler.css">
 </head>
 <body>
-  <div class="navbar">
-  <a href="home.html">Home</a>
-  <a href="interventions.html">Interventions</a>
-  <a href="redflags.html">Redflags</a>
-  <a href="newpost.html">New Post</a>
-  <a href="index.html" class="right">Logout</a>
-  <a href="users.html" class="right">John Doe</a>
-  </div>
 
   <div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="interventions.html">Interventions</a>
+  <a href="redflags.html">Red Flags</a>
+  <a href="newpost.html">Post iReport</a>
+  <a class="search-container" href="index.html">Logout</a>
+  <a class="search-container" href="users.html">Welcome John Doe</a>
   <div class="search-container">
-    <form action="">
-    <input type="text" placeholder="Search.." name="search" >
+    <form action="#">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">GO</button>
     </form>
   </div>
   </div>
 
   <div class="row">
+  <div class="left">
 
-  <div class="mainint">
+    <h1 class="logo" >New iReport</h1>
+    <p><img src="static/images/ireporter.jpg" height="90" width="100" alt="ireporter logo"/></p>
+    <p>Africa's <font class="corrupt" >Corruption</font> Informant</p>
 
-    <h1>New Post</h1>
+  </div>
+  <div class="middle">
+
+    <div class="container">
+    <form action="">
+     <label for="title">iReport Title</label>
+     <input type="text" id="posttitle" name="posttitle" placeholder="what is your post about?...">
+
+     <label for="type">iReport Type</label>
+     <select id="posttype" name="posttype">
+       <option value="intervention">Intervention</option>
+       <option value="redflag">Red Flag</option>
+     </select>
+      <input type="file" name="evidence" accept="audio/*,video/*,image/*">
+     <input type="checkbox" name="location" value="geo">Add Geolocation?<br/>
+
+
+     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+     <input type="submit" value="Publish">
+    </form>
+    </div>
+
+  </div>
+  <div class="right">
+
+    <h1>Top iReports</h1>
     <p><img src="static/images/ireporter.jpg" height="90" width="100" alt="ireporter logo"/></p>
     <p>Africa's <font id="corrupt" >Corruption</font> Informant</p>
 
   </div>
-  <div class="sideint">
-  <div class="container">
- <form action="">
-   <label for="fname">Post Title</label>
-   <input type="text" id="posttitle" name="posttitle" placeholder="what is your post about?...">
-
-   <label for="country">Post Type</label>
-   <select id="posttype" name="posttype">
-     <option value="intervention">Intervention</option>
-     <option value="redflag">Red Flag</option>
-   </select>
-
-   <input type="checkbox" name="vehicle1" value="Bike">Geolocation?<br/>
-
-
-   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-   <input type="submit" value="Publish">
- </form>
- </div>
-
-  </div>
-
   </div>
 
 
